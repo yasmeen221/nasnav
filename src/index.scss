@@ -1,0 +1,69 @@
+@import-normalize;
+@import "./assets/scss/screen_sizes";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+.space {
+  margin-top: 10px;
+}
+
+@media (max-width: $large_tablet_max_width) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+.MobileOnly {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (min-width: $large_tablet_max_width) {
+    display: none;
+  }
+}
+.slick-active {
+  button {
+    &::before {
+      background-color: #f62434 !important;
+    }
+  }
+}
+.grid-item {
+  width: 23%;
+  @media screen and (max-width: $small_tablet_max_width) {
+    width: 100%;
+  }
+  @media screen and (min-width: $large_tablet_min_width) and (max-width: $large_tablet_max_width) {
+    width: calc(100% / 3.3);
+  }
+}
+@media screen and (max-width: $small_tablet_max_width) {
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+}

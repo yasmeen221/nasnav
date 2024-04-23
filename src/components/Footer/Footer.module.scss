@@ -1,0 +1,128 @@
+@import "../../assets/scss/color_variables";
+.flex {
+  display: flex;
+
+  gap: 10px;
+}
+.FooterParent {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $black;
+  color: $white;
+}
+.Footer {
+  display: flex;
+  padding: 20px 20px 5px 20px;
+  .left {
+    width: 50%;
+    padding: 12px 90px 0px 90px;
+
+    .pcontant {
+      font-size: 12px;
+      p {
+        padding: 10px;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+    padding-left: 10px;
+
+    .top {
+      height: auto;
+      padding: 20px;
+
+      p {
+        font-size: 15px;
+        margin-bottom: 7px;
+      }
+      .form {
+        position: relative;
+      }
+      input {
+        width: 70%;
+        padding: 8px 17px;
+        border: 1px solid $lightGray;
+        border-radius: 20px;
+      }
+      .inputSide {
+        position: absolute;
+        right: 150px;
+        top: 54%;
+        transform: translateY(-50%);
+        font-size: 11px;
+        color: black;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        background-color: $yellow;
+        border-radius: 20px;
+        padding: 4px 6px;
+      }
+    }
+    .bottom {
+      display: flex;
+      .btmleft {
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 4px;
+          font-size: 11px;
+        }
+      }
+      .btmright {
+        width: 50%;
+        padding: 10px 0px 0px 10px;
+
+        .social {
+          display: flex;
+          padding: 6px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 6px;
+        }
+        a {
+          color: white;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.lastFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 90px 0px 100px;
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .imgcon {
+    display: flex;
+    width: 40%;
+
+    justify-content: center;
+  }
+  span {
+    font-size: 12px;
+  }
+  h5 {
+    display: inline;
+    font-size: 20px;
+  }
+  img {
+    margin: 10px;
+    width: 15%;
+    height: 33%;
+  }
+}

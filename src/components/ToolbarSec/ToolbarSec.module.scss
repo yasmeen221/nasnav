@@ -1,0 +1,12 @@
+.ToolbarSec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconList {
+  display: flex;
+  justify-content: center;
+  .iconStyle {
+    font-size: 22px;
+  }
+}

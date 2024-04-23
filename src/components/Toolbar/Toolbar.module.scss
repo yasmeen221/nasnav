@@ -1,0 +1,60 @@
+@import "../../assets/scss/color_variables";
+@import "../../assets/scss/screen_sizes";
+
+.Toolbar {
+  display: flex;
+  background-color: $yellow;
+
+  .imgStyle {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    span {
+      font-size: 24px;
+    }
+    img {
+      width: 140px;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+
+    a {
+      align-items: center;
+      font-weight: bold;
+      font-size: 15px;
+      color: $black;
+    }
+    span {
+      padding: 0px 10px 0px 10px;
+    }
+  }
+
+  .iconList {
+    display: flex;
+  }
+}
+// .MainNav {
+//   li {
+//     a {
+//       color: blue;
+//       &:hover,
+//       &:active,
+//       &.active {
+//         color: blue !important;
+//         background-color: white !important;
+//       }
+//       svg {
+//         color: red;
+//       }
+//     }
+//   }
+// }

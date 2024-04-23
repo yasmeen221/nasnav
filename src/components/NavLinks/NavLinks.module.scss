@@ -1,0 +1,37 @@
+@import "../../assets/scss/color_variables";
+@import "../../assets/scss/screen_sizes";
+
+.NavLinksContainer {
+  background-color: $black;
+  margin-top: 10px;
+}
+.NavLinks {
+  padding: 13px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.NavLink {
+  font-weight: bold;
+  display: flex;
+  color: $whitLight;
+  text-decoration: none;
+  font-size: 0.9rem;
+  &:last-child {
+    color: $red;
+  }
+}
+
+.NavLinksTwo {
+  padding: 0px 0px 0px 60px;
+  @extend .NavLink;
+  font-weight: thin;
+  gap: 5px;
+  margin: 20px 0px 20px 40px;
+  a {
+    color: $black;
+    &:last-child {
+      text-decoration: none;
+    }
+  }
+}

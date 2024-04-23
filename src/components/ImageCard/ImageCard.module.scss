@@ -1,0 +1,80 @@
+@import "../../assets/scss/color_variables";
+@import "../../assets/scss/screen_sizes";
+.left {
+  width: 40%;
+  padding: 60px 0px 50px 40px;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 100%;
+  height: 380px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: $lightGray;
+  border-radius: 20px;
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.option img {
+  background-color: $lightGray;
+  border-radius: 15px;
+  margin: 20px 5px 0px 5px;
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+}
+
+// @media only screen and (max-width: 768px) {
+//   .container {
+//     max-width: 90%;
+//     margin: auto;
+//     height: auto;
+//   }
+
+//   .left,
+//   .right {
+//     width: 100%;
+//   }
+
+//   .container {
+//     flex-direction: column;
+//   }
+// }
+
+// @media only screen and (max-width: 511px) {
+//   .container {
+//     max-width: 100%;
+//     height: auto;
+//     padding: 10px;
+//   }
+
+//   .left,
+//   .right {
+//     padding: 0;
+//   }
+
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   .option {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }

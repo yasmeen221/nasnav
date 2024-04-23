@@ -1,0 +1,32 @@
+@import "../../assets/scss/color_variables";
+.container {
+  width: 80%;
+  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0px;
+  margin: 10px 0px 70px 0px;
+  scrollbar-width: thin;
+  scrollbar-color: $purple transparent;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: inline-flex;
+}
+.headline {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  h3 {
+    color: $purple;
+  }
+  p {
+    color: $black;
+    opacity: 0.54;
+    margin-top: 3px;
+  }
+}
