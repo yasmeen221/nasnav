@@ -14,7 +14,7 @@ class Cards extends React.Component {
             <div className={`container `}>
               <div className={classes.Footer}>
                 <div className={classes.left}>
-                  <img src="../../../public/images/logo.png" />
+                  <img src="../../images/logo.png" />
                   <div className={classes.pcontant}>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -84,9 +84,9 @@ class Cards extends React.Component {
                 <p>&copy;2021 yesterday. all rights reserved</p>
                 {/* </div> */}
                 <div className={classes.imgcon}>
-                  <img src="../../../public/images/cash.png" />
-                  <img src="../../../public/images/visa.png" />
-                  <img src="../../../public/images/mastercard.png" />
+                  <img src="../../images/cash.png" />
+                  <img src="../../images/visa.png" />
+                  <img src="../../images/mastercard.png" />
                 </div>
                 {/* <div> */}
                 <span>
