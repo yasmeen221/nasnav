@@ -48,7 +48,7 @@ class ImageCard extends Component {
                   className={classes.slide}
                 />
                 <img
-                  src="../../../public/images/bagde.png"
+                  src="../../images/bagde.png"
                   alt="Badge"
                   className={classes.badge}
                 />

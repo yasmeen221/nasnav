@@ -4,8 +4,8 @@ export const DataCards = [
     name2: "consectetur adipisicing elit",
 
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 50,
@@ -17,8 +17,8 @@ export const DataCards = [
     name: "Lorem ipsum, dolor sit amet",
     name2: "consectetur adipisicing elit",
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 0,
@@ -31,8 +31,8 @@ export const DataCards = [
     name: "Lorem ipsum, dolor sit amet",
     name2: "consectetur adipisicing elit",
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 30,
@@ -44,8 +44,8 @@ export const DataCards = [
     name: "Lorem ipsum, dolor sit amet",
     name2: "consectetur adipisicing elit",
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 70,
@@ -57,8 +57,8 @@ export const DataCards = [
     name: "Lorem ipsum, dolor sit amet",
     name2: "consectetur adipisicing elit",
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 50,
@@ -70,8 +70,8 @@ export const DataCards = [
     name: "Lorem ipsum, dolor sit amet",
     name2: "consectetur adipisicing elit",
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 30,
@@ -83,8 +83,8 @@ export const DataCards = [
     name: "Lorem ipsum, dolor sit amet",
     name2: "consectetur adipisicing elit",
     image: "../images/img1.png",
-    badgeImage: "../../public/images/bagde.png",
-    adidasImage: "../../public/images/adidasimage.png",
+    badgeImage: "../images/bagde.png",
+    adidasImage: "../images/adidasimage.png",
     price: "9.999",
     rating: 4.5,
     discount: 0,
@@ -94,7 +94,7 @@ export const DataCards = [
   },
 ];
 export const ProductInfo = {
-  brandImage: "../../public/images/adidasimage.png",
+  brandImage: "../images/adidasimage.png",
   title:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, numquam.",
   rating: 4.9,
@@ -108,13 +108,13 @@ export const ProductInfo = {
     { name: "XX Large" },
   ],
   color: [
-    { imgSrc: "../../public/images/adidasimage.png", name: "imageOne" },
-    { imgSrc: "../../public/images/adidasimage.png", name: "imageOne" },
+    { imgSrc: "../images/adidasimage.png", name: "imageOne" },
+    { imgSrc: "../images/adidasimage.png", name: "imageOne" },
   ],
 };
 
 export const ImageAdidasData = {
-  src: "../../public/images/adidasimage.png",
+  src: "../images/adidasimage.png",
   title: "adidas",
 };
 export const NavLinksData = [
@@ -180,19 +180,19 @@ export const FooterLinks = [
 
 export const SocialLinks = [
   {
-    icon: "../../public/images/facebook.png",
+    icon: "../images/facebook.png",
     link: "yesshter",
   },
   {
-    icon: "../../public/images/linked.jpg",
+    icon: "../images/linked.jpg",
     link: "yesshter",
   },
   {
-    icon: "../../public/images/inst.jpg",
+    icon: "../images/inst.jpg",
     link: "yesshter",
   },
   {
-    icon: "../../public/images/twitter.png",
+    icon: "../images/twitter.png",
     link: "yesshter",
   },
 ];

@@ -9,6 +9,7 @@ import { SlLocationPin } from "react-icons/sl";
 import ToolbarSec from "../ToolbarSec/ToolbarSec";
 import ListIcons from "../ListIcons/ListIcons";
 import NavLinks from "../NavLinks/NavLinks";
+import imageLogo from "../../assets/images/navlogo.png";
 
 class Toolbar extends Component {
   render() {
@@ -23,7 +24,7 @@ class Toolbar extends Component {
                     {" "}
                     <RxHamburgerMenu />
                   </span>
-                  <img src="../../../public/images/navlogo.png"></img>
+                  <img src={imageLogo}></img>
                 </div>
                 <div>
                   <p>
