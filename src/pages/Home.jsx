@@ -8,9 +8,8 @@ const Home = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<ImageCard />} />
-        </Route>
+        <Route path="/" element={<Layout />} />
+        <Route index element={<ImageCard />} />
       </Routes>
       {/* <Toolbar />
       <ImageCard />
