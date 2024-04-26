@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import ImageAdidas from "../ImageAdids/ImageAdidas";
 import { ImageAdidasData } from "../../services/Data";
 import Search from "../Search/Search";
@@ -8,65 +8,55 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
 import * as classes from "./ToolbarSec.module.scss";
 import ModelCom from "../ModelCom/ModelCom";
+import { useSelector } from "react-redux";
 
-class ToolbarSec extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isDrawerOpen: false,
-    };
-  }
+const ToolbarSec = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  toggleDrawer = () => {
-    this.setState((prevState) => ({
-      isDrawerOpen: !prevState.isDrawerOpen,
-    }));
+  const quantityCard = useSelector((state) => state.cardReducer.quantity);
+  const toggleDrawer = () => {
+    setIsDrawerOpen((prevState) => !prevState);
   };
-  render() {
-    const quantity = 1;
 
-    const { isDrawerOpen } = this.state;
+  return (
+    <>
+      <header>
+        <div className="container space">
+          <div className={classes.ToolbarSec}>
+            <div>
+              <Search />
+            </div>
+            <div>
+              <ImageAdidas src={ImageAdidasData.src} />
+            </div>
+            <div className={classes.iconList}>
+              <ListIcons
+                style={classes.iconStyle}
+                icon={<LiaShoppingBasketSolid />}
+                name="Cart"
+                quantity={quantityCard}
+                onClick={toggleDrawer}
+              />
 
-    return (
-      <>
-        <header>
-          <div className="container space">
-            <div className={classes.ToolbarSec}>
-              <div>
-                <Search />
-              </div>
-              <div>
-                <ImageAdidas src={ImageAdidasData.src} />
-              </div>
-              <div className={classes.iconList}>
-                <ListIcons
-                  style={classes.iconStyle}
-                  icon={<LiaShoppingBasketSolid />}
-                  name="Cart"
-                  quantity={quantity}
-                  onClick={this.toggleDrawer}
-                />
+              {isDrawerOpen && <ModelCom close={toggleDrawer} />}
 
-                {isDrawerOpen && <ModelCom close={this.toggleDrawer} />}
+              <ListIcons
+                style={classes.iconStyle}
+                icon={<FaRegHeart />}
+                name=" WitchList"
+              />
 
-                <ListIcons
-                  style={classes.iconStyle}
-                  icon={<FaRegHeart />}
-                  name=" WitchList"
-                />
-
-                <ListIcons
-                  style={classes.iconStyle}
-                  icon={<IoPersonOutline />}
-                  name="Login"
-                />
-              </div>
+              <ListIcons
+                style={classes.iconStyle}
+                icon={<IoPersonOutline />}
+                name="Login"
+              />
             </div>
           </div>
-        </header>
-      </>
-    );
-  }
-}
+        </div>
+      </header>
+    </>
+  );
+};
 
 export default ToolbarSec;

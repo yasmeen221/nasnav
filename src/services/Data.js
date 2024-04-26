@@ -198,3 +198,13 @@ export const SocialLinks = [
 ];
 
 export const images = ["img1.png", "img1.png", "img1.png", "img1.png"];
+
+export const DataCardModel = [
+  {
+    image: "../images/img1.png",
+    price: "9.999",
+    title:
+      "    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,ad.",
+    totalPrice: "19.999",
+  },
+];

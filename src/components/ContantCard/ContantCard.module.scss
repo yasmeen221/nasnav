@@ -94,7 +94,7 @@
     }
   }
 }
-button {
+.buttonCard {
   width: 40%;
   padding: 10px;
   border: none;
@@ -107,7 +107,7 @@ button {
   cursor: pointer;
 }
 .buttonSec {
-  @extend button;
+  @extend .buttonCard;
   background: $yellow;
   color: $black;
 }
