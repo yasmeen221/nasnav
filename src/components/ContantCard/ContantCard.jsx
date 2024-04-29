@@ -33,20 +33,24 @@ const ContantCard = () => {
   // };
 
   const quantityCard = useSelector((state) => state.cardReducer.quantity);
-  const cartItems = useSelector((state) => state.cardReducer.cartItems);
-  const dispatch = useDispatch();
-  // const newItem = {
-  //   id: cartItems?.length + 1,
-  //   quantityCard,
-  // };
-  // const addItemToCart = () => {
-  //   const newItem = {
-  //     id: cartItems ? cartItems.length + 1 : 1,
-  //     quantity: quantityCard,
-  //   };
-  //   dispatch(addToCard(newItem));
-  // };
 
+  const cartItems = useSelector((state) => state.cardReducer.cardItems);
+  console.log(cartItems);
+  const dispatch = useDispatch();
+
+  const product = {
+    image: "../images/img1.png",
+    price: "9.999",
+    title:
+      "    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,ad.",
+    totalPrice: "19.999",
+  };
+  const handleAddToCart = () => {
+    for (let i = 0; i < quantityCard; i++) {
+      dispatch(addToCard(product));
+    }
+    // dispatch(addToCard({ product, quantity: 1 }));
+  };
   return (
     <>
       <div className={classes.right}>
@@ -112,10 +116,7 @@ const ContantCard = () => {
           </div>
         </div>
 
-        <button
-          className={classes.buttonCard}
-          onClick={() => dispatch(addToCard())}
-        >
+        <button className={classes.buttonCard} onClick={handleAddToCart}>
           Add To Cart
         </button>
 

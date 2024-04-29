@@ -48,7 +48,7 @@ class Card extends React.Component {
               <Footer from={from} to={to} inDay={inDay} />
             ) : (
               <div className={classes.footerCardSec}>
-                <p>
+                <p className={classes.p}>
                   pickup From: <span>{from}</span>
                 </p>
               </div>

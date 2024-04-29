@@ -14,6 +14,8 @@ const ToolbarSec = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const quantityCard = useSelector((state) => state.cardReducer.quantity);
+  const items = useSelector((state) => state.cardReducer.cardItems);
+
   const toggleDrawer = () => {
     setIsDrawerOpen((prevState) => !prevState);
   };
@@ -34,7 +36,7 @@ const ToolbarSec = () => {
                 style={classes.iconStyle}
                 icon={<LiaShoppingBasketSolid />}
                 name="Cart"
-                quantity={quantityCard}
+                quantity={items.length}
                 onClick={toggleDrawer}
               />
 

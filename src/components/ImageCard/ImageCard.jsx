@@ -53,18 +53,17 @@ class ImageCard extends Component {
                   className={classes.badge}
                 />
               </div>
-              <div className={`${classes.option} ${classes.flex}`}>
-                {/* <Carousel responsive={responsive}> */}
 
-                {images.map((image, index) => (
-                  <img
-                    key={index}
-                    src={`../../images/${image}`}
-                    onClick={() => this.handleImageClick(index)}
-                  />
-                ))}
-
-                {/* </Carousel> */}
+              <div className={`${classes.option}`}>
+                <Carousel responsive={responsive}>
+                  {images.map((image, index) => (
+                    <img
+                      key={index}
+                      src={`../../images/${image}`}
+                      onClick={() => this.handleImageClick(index)}
+                    />
+                  ))}
+                </Carousel>
               </div>
             </div>
             <ContantCard />

@@ -21,14 +21,14 @@
       font-weight: bold;
     }
   }
-}
-.spanDelete {
-  text-decoration: line-through;
-}
-.spanDiscount {
-  background-color: $yellow;
-  padding: 2px 5px 2px 5px;
-  color: $black;
-  font-size: 10px;
-  font-weight: bold;
+  .spanDelete {
+    text-decoration: line-through;
+  }
+  .spanDiscount {
+    background-color: $yellow;
+    padding: 2px 5px 2px 5px;
+    color: $black;
+    font-size: 10px;
+    font-weight: bold;
+  }
 }

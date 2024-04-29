@@ -11,7 +11,7 @@ class Cards extends React.Component {
         <div className={`container ${classes.flex}`}>
           <div className={classes.container}>
             <div className={classes.headline}>
-              <h3>Similar Products</h3>
+              <h3 className={classes.title}>Similar Products</h3>
               <p>you may like this product also</p>
             </div>
             <div className={classes.cards}>

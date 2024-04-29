@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+
 const initialState = {
   quantity: 0,
   cardItems: [],
@@ -12,21 +13,33 @@ const cardSlice = createSlice({
       state.quantity++;
     },
     decrementQuantity: (state, action) => {
-      state.quantity--;
+      if (state.quantity > 0) {
+        state.quantity--;
+      }
     },
     addToCard: (state, action) => {
-      // const { quantity } = action.payload;
-      const newItem = {
-        id: state.cardItems.length + 1,
-        quantity: action.payload.quantity,
-      };
-      (state.cardItems = [...state.cardItems, newItem]),
-        console.log("Added to card:", state.cardItems);
+      state.cardItems.push(action.payload);
+    },
+    removeFromCart: (state, action) => {
+      const { product, quantity } = action.payload;
+      for (let i = 0; i < quantity; i++) {
+        const index = state.cardItems.findIndex(
+          (item) => item.id === product.id
+        );
+        if (index !== -1) {
+          state.cardItems.splice(index, 1);
+          state.quantity--;
+        }
+      }
     },
   },
 });
 
-export const { incrementQuantity, decrementQuantity, addToCard } =
-  cardSlice.actions;
+export const {
+  incrementQuantity,
+  decrementQuantity,
+  addToCard,
+  removeFromCart,
+} = cardSlice.actions;
 
 export default cardSlice.reducer;
